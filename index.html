@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Tool</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city">
+            <button><img src="images/search.svg" alt=""></button>
+        </div>
+        <div class="error">
+            <img src="images/error-905.svg" alt="" style="width:60px; margin-top: 20px;">
+            <p style="margin-top: 10px; font-size: 40px;">Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <img src="images/clear.svg" alt="" class="weather-icon">
+            <h1 class="temp">34°C</h1>
+            <h2 class="city">Delhi</h2>
+            <div style=" display:flex; align-items: center; margin-left: 130px; margin-right: 130px;">
+                <h2 style="margin: 5px; font-size: 20px;">Feels like</h2>
+                <h2 style="font-size: 20px" class="feels">35°C</h2>
+            </div>
+            <div class="details">
+                <div class="det">
+                    <img src="images/humidity.svg" alt="" >
+                    <div>
+                        <p class="humidity">40%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="det">
+                    <img src="images/wind.svg" alt="" >
+                    <div>
+                        <p class="wind">10 km/hr</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="weather.js"></script>
+</html>
